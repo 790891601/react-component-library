@@ -9,20 +9,32 @@ This is React-component-library.
 
 ## Button
 1. 导入Button组件
-    `var Button = require("./component-library/Button") `
+    ```
+    var Button = require("./component-library/Button") 
+    ```
 2. 传入相关props
-    `<Button className={string} style={object} onClick={function} text={|string}>{string|}</Button>`
+    ```
+    <Button className={string} style={object} onClick={function} text={|string}>{string|}</Button>
+    ```
         
 ## Input
 1. 导入Input组件
-    `var Input = require("./component-library/Input")`
+    ```
+    var Input = require("./component-library/Input")
+    ```
 2. 传入相关props
-    `<Input value={string:default=""} />`
+    ```
+    <Input value={string:default=""} />
+    ```
 ## Select
 1. 导入Select组件
-    `var Select = require("./component-library/Select")`
+    ```
+    var Select = require("./component-library/Select")
+    ```
 2. 传入相关props
-    `<Select text={string}  />`
+    ```
+    <Select text={string}  />
+    ```
 
 ## Table
 1. 导入Table组件
