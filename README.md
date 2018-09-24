@@ -2,13 +2,13 @@
 This is React-component-library.
 
 ## 以下必读
-1. className={string}             
+1. className = { string }             
 > `className需要字符串的形式`
-2. text={|string} value={string|} 
+2. text={ |string } value={ string| } 
 > `text和{string|}任选一个传参，效果一样`
-3. data={2array}                  
+3. data={ 2array }                  
 > `data是一个二维数组 `
-4. style={int:default=1}          
+4. style={ int:default=1 }          
 > `style可选参数，默认为1`
 
 ## Button
@@ -18,7 +18,7 @@ This is React-component-library.
     ```
 2. 传入相关props
     ```
-    <Button className={string} style={object} onClick={function} text={|string}>{string|}</Button>
+    <Button className={ string } style={ object } onClick={ function } text={ |string }>{ string| }</Button>
     ```
         
 ## Input
@@ -28,7 +28,7 @@ This is React-component-library.
     ```
 2. 传入相关props
     ```
-    <Input value={string:default=""} />
+    <Input value={ string:default="" } />
     ```
 ## Select
 1. 导入Select组件
@@ -37,7 +37,7 @@ This is React-component-library.
     ```
 2. 传入相关props
     ```
-    <Select text={string}  />
+    <Select text={ string }  />
     ```
 
 ## Table
@@ -50,8 +50,8 @@ This is React-component-library.
     ```
 2. 传入相关props
     ```
-    <Table data={2array} style={int:default=1}>
-        <TablePage page={int} pageItems={int} />
+    <Table data={ 2array } style={ int:default=1 }>
+        <TablePage page={ int } pageItems={ int } />
         <ColumnTitles></ColumnTitles>
         <Columns></Columns>
         <Columns></Columns>
