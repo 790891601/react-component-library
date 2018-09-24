@@ -2,10 +2,10 @@
 This is React-component-library.
 
 ## 以下必读
-1 className={string}  // className需要字符串的形式
-2 text={|string} value={string|}   // text和{string|}任选一个传参，效果一样
-3 data={2array}    // data是一个二维数组
-4 style={int:default=1}  // style可选参数，默认为1
+1. className={string}  // className需要字符串的形式
+2. text={|string} value={string|}   // text和{string|}任选一个传参，效果一样
+3. data={2array}    // data是一个二维数组
+4. style={int:default=1}  // style可选参数，默认为1
 
 ## Button
 1. 导入Button组件
