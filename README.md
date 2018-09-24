@@ -8,27 +8,23 @@ This is React-component-library.
 4 style={int:default=1}  // style可选参数，默认为1
 
 ## Button
-* help 
 1 导入Button组件
     `var Button = require("./component-library/Button") `
 2 传入相关props
     `<Button className={string} style={object} onClick={function} text={|string}>{string|}</Button>`
         
 ## Input
-* help 
 1 导入Input组件
     `var Input = require("./component-library/Input")`
 2 传入相关props
     `<Input value={string:default=""} />`
 ## Select
-* help 
-    1 导入Select组件
-        `var Select = require("./component-library/Select")`
-    2 传入相关props
-        `<Select text={string}  />`
+1 导入Select组件
+    `var Select = require("./component-library/Select")`
+2 传入相关props
+    `<Select text={string}  />`
 
 ## Table
-* help 
 1 导入Table组件
 ```
 var Table = require("./component-library/Table").Table
