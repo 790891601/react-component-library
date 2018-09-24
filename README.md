@@ -38,23 +38,23 @@ This is React-component-library.
 
 ## Table
 1. 导入Table组件
-```
-var Table = require("./component-library/Table").Table
-var Columns = require("./component-library/Table").Columns
-var TablePage = require("./component-library/Table").TablePage
-var TableTitles = require("./component-library/Table").ColumnTitles
-```
+    ```
+    var Table = require("./component-library/Table").Table
+    var Columns = require("./component-library/Table").Columns
+    var TablePage = require("./component-library/Table").TablePage
+    var TableTitles = require("./component-library/Table").ColumnTitles
+    ```
 2. 传入相关props
-```
-<Table data={2array} style={int:default=1}>
-    <TablePage page={int} pageItems={int} />
-    <ColumnTitles></ColumnTitles>
-    <Columns></Columns>
-    <Columns></Columns>
-    <Columns></Columns>
-    <Columns></Columns>
-</Table>
-```
+    ```
+    <Table data={2array} style={int:default=1}>
+        <TablePage page={int} pageItems={int} />
+        <ColumnTitles></ColumnTitles>
+        <Columns></Columns>
+        <Columns></Columns>
+        <Columns></Columns>
+        <Columns></Columns>
+    </Table>
+    ```
 
 /*
     Table组件已实现二维数组传值，分页，展示数据基本实现，默认样式
