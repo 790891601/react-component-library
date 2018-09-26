@@ -1,1 +1,0 @@
-export const data = {} //存储当前数据
