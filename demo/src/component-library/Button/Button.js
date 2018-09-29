@@ -9,7 +9,8 @@ export default class Button extends React.Component {
       onClick: _ => _,
       style: {},
       customClassName: '',
-      children : '未命名'
+      children : '未命名',
+      id : ""
     }
   }
 
@@ -19,7 +20,8 @@ export default class Button extends React.Component {
       onClick: PropTypes.func,
       style: PropTypes.object,
       customClassName: PropTypes.className,
-      children : PropTypes.string
+      children : PropTypes.string,
+      id : PropTypes.string
     }
   }
 
@@ -49,15 +51,16 @@ export default class Button extends React.Component {
 
   render () {
     const { text, children,
-      className: customClassName, style } = this.props
+      className: customClassName, style, id } = this.props
     const captionText = children || text
     const { mouseDown } = this.state
 
-    const mouseDownCls = mouseDown ? 'type-error-class-mousedown' : ''
+    const mouseDownCls = mouseDown ? 'type-error-class-mousedown' : ""
 
-    const className = `type-error-button ${mouseDownCls} ${customClassName}`
+    const className = `type-error-button ${mouseDownCls} ${customClassName || ""}`
 
     return <button
+      id={id}
       className={className}
       style={style}
       onClick={this.onClick.bind(this)}

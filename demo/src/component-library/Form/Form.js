@@ -1,6 +1,5 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Config from "./config";
 
 export default class Form extends React.Component {
     constructor(props) {
@@ -10,27 +9,34 @@ export default class Form extends React.Component {
     static get defaultProps() {
         return {
             action : "/",
-            method : "get"
+            method : "get",
+            uploadFile : false,
+            id : ""
         }
     }
 
     static get propTypes() {
         return {
             action : PropTypes.string,
-            method : PropTypes.string
+            method : PropTypes.string,
+            uploadFile : PropTypes.bool,
+            id : PropTypes.string 
         }
     }
 
     render() {
-        let { action, method, encType } = this.props
-        const methods = ["get", "post", "put", "delete"];
-        method = methods.includes(method) ? method.toLowerCase() : "get"; 
+        let { action, method, uploadFile, id } = this.props
 
-        let encType = "";
-        if(Config.encType.type === "file") {
-            encType = "multipart/form-data";    
-        }
-    
-        return <form action={ action } method={ method } encType={encType}>{ this.props.children }</form>
+        //验证提交类型合法性
+        const methods = ["get", "post", "put", "delete"];
+        method = methods.includes(method.toLowerCase()) ? method : "get"; 
+        //验证文件上传
+        uploadFile = uploadFile ? "multipart/form-data" : "";
+
+        return <form 
+            action={ action } 
+            method={ method } 
+            encType={ uploadFile } 
+            id={ id }>{ this.props.children }</form>
     }
 }
