@@ -22,7 +22,11 @@
 // import FormWay from "./FormWay";
 // FormWay();
 
-import ReactRouterWay from "./ReactRouterWay";
-import ReactDOM from "react-dom";
+//import ReactRouterWay from "./ReactRouterWay";
+//import ReactDOM from "react-dom";
 
-ReactDOM.render(<ReactRouterWay />, document.querySelector("#react"));
+//ReactDOM.render(<ReactRouterWay />, document.querySelector("#react"));
+
+import ReactDOM from "react-dom";
+import RadioWay from "./RadioWay"
+ReactDOM.render(<RadioWay />, document.querySelector("#react"));

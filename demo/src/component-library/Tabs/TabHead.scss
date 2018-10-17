@@ -1,0 +1,32 @@
+.tabHeadPrefix {
+    display: inline-block;
+    padding: 0 20px;
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -ms-user-select: none;
+    text-align: center;
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        background-color: orange;
+        transition: all .5s;
+        width: 0;
+        height: 2px;
+    }
+    &:hover {
+        cursor: pointer;
+        &::before {
+            left: 0;
+            width: 100%;
+        }
+    }   
+}
+
+.tabHeadActive {
+    background-color: orange;
+}
